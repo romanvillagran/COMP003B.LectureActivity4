@@ -1,14 +1,19 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-public class Article
+
+namespace COMP003B.LectureActivity4.Models
 {
-    public int Id { get; set; }
 
-    [Required]
-    [StringLength(100)]
-    public string Title { get; set; }
+    public class Article
+    {
+        public int Id { get; set; }
 
-    [Required]
-    [StringLength(300)]
-    public string Summary { get; set; }
+        [Required]
+        [StringLength(100)]
+        public string Title { get; set; }
+
+        [Required]
+        [StringLength(300)]
+        public string Summary { get; set; }
+    }
 }
